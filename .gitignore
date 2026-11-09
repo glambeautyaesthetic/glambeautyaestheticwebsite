@@ -1,0 +1,8 @@
+# Internal client notes: kept locally, not published in this public repository
+HANDOVER.md
+
+# Python and system files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

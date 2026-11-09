@@ -1,0 +1,36 @@
+{
+  "_note": "Quotes are copied from Google reviews. Shorten with an ellipsis if needed, but never change their meaning. Don't use any review that mentions Botox (UK advertising rules), and avoid strong results claims.",
+  "rating": "5.0",
+  "count": "85",
+  "google_url": "https://www.google.com/maps/search/?api=1&query=Glam+Beauty+Aesthetics+London",
+  "reviews": {
+    "toni":     {"name": "Toni-Marie T.", "tag": "Skin boosters", "link": "/skin-boosters-london/", "text": "I told her I don't like fillers and wanted natural results… I tried exosomes and am really happy."},
+    "leila":    {"name": "Leila", "tag": "First visit", "link": "", "text": "Madina is welcoming, friendly, and made me and my friend feel completely at ease from the start. She explained everything clearly and took the time to answer all our questions."},
+    "saira":    {"name": "Saira T.", "tag": "Lip filler", "link": "/lip-filler-london/", "text": "Had my first lip filler appointment here and I love the result. Shania is so helpful and she really listens to what you want."},
+    "becky":    {"name": "Becky F.", "tag": "Polynucleotides", "link": "/skin-boosters-london/", "text": "Considerate and professional therapist who seemed genuinely conscientious and caring."},
+    "patricia": {"name": "Patricia G.", "tag": "Microneedling", "link": "/microneedling-london/", "text": "The therapist is very knowledgeable advising me how to get the optimal results. She continually checked with me I was comfortable with pressure and depth."},
+    "ana":      {"name": "Ana N.", "tag": "Anti-wrinkle", "link": "/anti-wrinkle-injections-london/", "text": "Had a really good experience with Madina! … She explained everything really well, answered all my questions and made me feel comfortable throughout."},
+    "naz":      {"name": "Naz", "tag": "Under-eye polynucleotides", "link": "/tear-trough-filler-london/", "text": "Completely painfree, great result… did undereye polynucleotides and will definitely repeat."},
+    "sally":    {"name": "Sally W.", "tag": "Anti-wrinkle", "link": "/anti-wrinkle-injections-london/", "text": "What's fantastic is she uses numbing cream in exactly the right places for exactly the right time."},
+    "hasan":    {"name": "Hasan", "tag": "First visit", "link": "", "text": "She was incredibly warm and professional from start to finish, which made me feel completely at ease. She took the time to explain everything clearly, so I always knew what to expect."},
+    "hannah":   {"name": "Hannah T.", "tag": "Microneedling", "link": "/microneedling-london/", "text": "The therapist was friendly, knowledgeable and took care to make sure I was comfortable throughout the process."},
+    "mohammad": {"name": "Mohammad", "tag": "Treatment", "link": "", "text": "The treatment was carried out with great care and attention to detail. Highly recommended for their high quality treatments."},
+    "yushrah":  {"name": "Yushrah D.", "tag": "Bridal hair & makeup", "link": "/bridal-hair-makeup-london/", "text": "My MUA cancelled on me last min… Without any trial she delivered the hair and makeup look I wanted. I cannot thank her enough."},
+    "zara":     {"name": "Zara S.", "tag": "Lip filler", "link": "/lip-filler-london/", "text": "Love my lips. Very professional."},
+    "osadiawa": {"name": "Osadiawa O.", "tag": "Microneedling", "link": "/microneedling-london/", "text": "I've had microneedling done before but this one is a 7 star. The procedure was excellent. The therapist is well educated and I'm definitely coming back."},
+    "vahideh":  {"name": "Vahideh", "tag": "PDO thread lift", "link": "/pdo-thread-lift-london/", "text": "Thank you for being professional and kind. I had mono thread… she is so amazing, highly recommended."}
+  },
+  "home_featured": ["toni", "leila", "saira", "becky", "patricia", "ana"],
+  "home_cards": ["naz", "sally", "hasan", "hannah", "yushrah", "osadiawa"],
+  "pages": {
+    "lip-filler-london": ["saira", "zara", "leila"],
+    "anti-wrinkle-injections-london": ["ana", "sally", "hasan"],
+    "dermal-fillers-london": ["mohammad", "saira", "leila"],
+    "tear-trough-filler-london": ["naz", "becky", "hasan"],
+    "skin-boosters-london": ["toni", "becky", "naz"],
+    "pdo-thread-lift-london": ["vahideh", "mohammad", "hasan"],
+    "fat-dissolving-london": ["mohammad", "hasan", "leila"],
+    "microneedling-london": ["patricia", "hannah", "osadiawa"],
+    "bridal-hair-makeup-london": ["yushrah", "leila", "mohammad"]
+  }
+}

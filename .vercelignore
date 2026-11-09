@@ -1,0 +1,4 @@
+# Build tools and notes stay in the repository but are not published on the website
+_build/
+README.md
+HANDOVER.md
