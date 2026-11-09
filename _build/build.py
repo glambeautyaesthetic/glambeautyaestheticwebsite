@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "15"
+ASSET_V = "18"
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
@@ -777,6 +777,7 @@ def page(t, services):
         <span class="status js-status"><span class="status-dot"></span><span class="js-status-text">Open 7 days</span></span>
         <a class="rating-chip" href="#reviews">{STARS}<b>{REVIEWS['rating']}</b> from {REVIEWS['count']} Google reviews</a>
         <span class="cred-chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.4-7 10-4-1.6-7-5.5-7-10V6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Level 4 advanced qualified</span>
+        <span class="cred-chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>20+ years' experience</span>
       </div>
     </div>
     <figure class="t-face rise">
@@ -857,6 +858,7 @@ def page(t, services):
     <ul class="assure">
       <li>Free consultation</li>
       <li>Level 4 qualified professional</li>
+      <li>20+ years' experience</li>
       <li>Secure online booking</li>
       <li>Weekend appointments</li>
       <li>Rated {REVIEWS['rating']} on Google</li>

@@ -42,7 +42,7 @@ PHRASES = [
     ("hair removal", "laser"), ("tattoo removal", "tattoo"), ("teeth whitening", "teeth"), ("lash lift", "lash"), ("brow lamination", "lash"),
     ("canning town station", "station"), ("canning town", "address"), ("barking road", "address"), ("nad+", "nad"), ("b 12", "b12"), ("vitamin b12", "b12"),
     ("no cost consultation", "consultation"), ("free consultation", "consultation"), ("complimentary consultation", "consultation"),
-    ("no cost", "consultation"), ("level 4", "practitioner"), ("level four", "practitioner"), ("who will treat me", "practitioner"),
+    ("no cost", "consultation"), ("level 4", "practitioner"), ("years experience", "practitioner"), ("years of experience", "practitioner"), ("how experienced", "practitioner"), ("level four", "practitioner"), ("who will treat me", "practitioner"),
     ("good morning", "hello"), ("good afternoon", "hello"), ("good evening", "hello"),
 ]
 
@@ -299,7 +299,7 @@ def build_kb(b, services, home_html):
          ["Yes, your consultation is free, with no obligation to go ahead. You'll talk through what you'd like to change and your medical history, and leave with a clear plan and price."],
          [["Request a consultation", "/?consult=1#contact", "page"], ["Ask on WhatsApp", "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20consultation.", "wa"]], 1.0),
         ("practitioner", "Who does the treatments", "practitioner who",
-         [f"Treatments are carried out by our Level 4 advanced qualified professional, who explains everything before starting. Clients often mention how clearly everything is explained: we're rated {rating} from {count} Google reviews.",
+         [f"Treatments are carried out by our Level 4 advanced qualified professional, who has more than 20 years' experience in the beauty industry and explains everything before starting. Clients often mention how clearly everything is explained: we're rated {rating} from {count} Google reviews.",
           "If you'd like to know more about her training, just ask on WhatsApp."],
          [["Read reviews", "/#reviews", "page"], wa], 1.0),
         ("reviews", "Reviews", "review",
@@ -340,7 +340,7 @@ def build_kb(b, services, home_html):
           "Our treatments include anti-wrinkle injections, lip and dermal fillers, skin boosters, microneedling and peels, PDO thread lifts, fat dissolving, and bridal hair and makeup."],
          [["See all treatments", "/#treatments", "page"], wa], 1.0),
         ("about", "About the clinic", "clinic about glam beauty aesthetics",
-         ["Glam Beauty Aesthetics is a London clinic for non-surgical facial contouring, medical-grade skin treatments, and bridal hair and makeup. We're open seven days a week."],
+         ["Glam Beauty Aesthetics is a London clinic for non-surgical facial contouring, medical-grade skin treatments, and bridal hair and makeup. Our practitioner has more than 20 years' experience in the beauty industry, and we're open seven days a week."],
          [["About us", "/#about", "page"], book], 0.8),
     ]
     for gid, title, words, answer, links, pri in G:
