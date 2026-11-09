@@ -899,3 +899,12 @@ html.chat-lock,html.chat-lock body{overflow:hidden}
 @media (max-width:860px){
   .cred-seal{width:100px;height:100px;right:-6px;bottom:30px}
 }
+
+/* ---------- Results gallery: three across on desktop ---------- */
+.gallery picture{display:block}
+@media (min-width:1025px){
+  .gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .gallery button:nth-child(3n+1){--side:-1}
+  .gallery button:nth-child(3n+2){--side:0}
+  .gallery button:nth-child(3n){--side:1}
+}
