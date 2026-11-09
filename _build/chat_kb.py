@@ -291,7 +291,7 @@ def build_kb(b, services, home_html):
         ("voucher", "Gift vouchers", "voucher",
          ["For gift vouchers or vouchers you've bought elsewhere, please message us on WhatsApp or call and we'll help."], [wa, call], 1.0),
         ("prices", "Prices", "price",
-         ["Treatments start at £35. A few favourites:"], [["See the full price list", "/#treatments", "page"], book], 0.9),
+         ["Treatments start at £20. A few favourites:"], [["See the full price list", "/#treatments", "page"], book], 0.9),
         ("treatments", "Our treatments", "treatment",
          ["We offer anti-wrinkle injections, lip and dermal fillers, tear trough filler, skin boosters (including polynucleotides and exosomes), PDO thread lifts, fat dissolving, microneedling, peels, hair growth therapy, vitamin injections, and bridal hair and makeup."],
          [["Find your treatment", "/#face-map", "page"], ["Full price list", "/#treatments", "page"]], 0.9),
