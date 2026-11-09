@@ -909,3 +909,11 @@ html.chat-lock,html.chat-lock body{overflow:hidden}
   .gallery button:nth-child(3n){--side:1}
 }
 @media (min-width:861px){.hero-meta{gap:8px 18px;font-size:13.5px}}
+
+/* ---------- Clear numbers ----------
+   Bodoni Moda's hairline strokes make a small "4" look like a "1" (and £124 like £121).
+   Its small-text cut (opsz 6) has sturdier strokes, so prices, counts and short labels use it.
+   Big headlines keep the high-contrast display cut. */
+.svc-price,.fm-item-price,.t-card .fm-item-price,.proof b,.steps li::before,.chat-items b,.bridal-prices b,.hero-tag b{
+  font-optical-sizing:none;font-variation-settings:"opsz" 6}
+.seal-num{font-style:normal;font-weight:500;font-optical-sizing:none;font-variation-settings:"opsz" 6}
