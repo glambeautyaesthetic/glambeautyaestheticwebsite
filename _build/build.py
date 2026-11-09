@@ -20,7 +20,7 @@ BOOK = "https://marketplace.getglossa.com/studios/glam-beauty-aesthetics"
 PHONE_INTL = "+447988347194"
 PHONE = "07988 347194"
 EMAIL = "shania0712@googlemail.com"
-INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
+INSTAGRAM = "https://www.instagram.com/glam.beautyaesthetic"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
@@ -616,7 +616,7 @@ def visit_section():
           <li><span>Phone</span><a href="tel:{PHONE_INTL}" data-cta="visit-call">{PHONE}</a></li>
           <li><span>Email</span><a href="mailto:{EMAIL}">{EMAIL}</a></li>
           <li><span>WhatsApp</span><a href="{WHATSAPP}" target="_blank" rel="noopener" data-cta="visit-whatsapp">Message us on WhatsApp</a></li>
-          <li><span>Instagram</span><a href="{INSTAGRAM}" target="_blank" rel="noopener">@glam_beauty__aesthetics</a></li>
+          <li><span>Instagram</span><a href="{INSTAGRAM}" target="_blank" rel="noopener">@glam.beautyaesthetic</a></li>
         </ul>
       </address>
       <a class="btn btn-primary js-book" data-cta="visit" href="{BOOK}">Book your visit {ARROW}</a>
