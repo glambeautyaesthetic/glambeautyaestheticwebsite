@@ -917,3 +917,29 @@ html.chat-lock,html.chat-lock body{overflow:hidden}
 .svc-price,.fm-item-price,.t-card .fm-item-price,.proof b,.steps li::before,.chat-items b,.bridal-prices b,.hero-tag b{
   font-optical-sizing:none;font-variation-settings:"opsz" 6}
 .seal-num{font-style:normal;font-weight:500;font-optical-sizing:none;font-variation-settings:"opsz" 6}
+
+/* ---------- Section colour: rose mauve (replaces the deep plum backgrounds) ----------
+   Plum (--plum) stays as the text colour; only the dark bands change. */
+:root{--band:#6E3B50;--band-deep:#5A2E41;--band-2:#7D4A5F;--band-gold:#EBCB9F;--band-pink:#F6CFDA}
+.promo{background:linear-gradient(90deg,var(--band-deep),var(--band) 50%,var(--band-deep))}
+.ribbon{background:var(--band)}
+.ribbon::before{background:linear-gradient(90deg,var(--band),transparent)}
+.ribbon::after{background:linear-gradient(-90deg,var(--band),transparent)}
+.results,.final,.consult{background:var(--band)}
+.gallery button{background:var(--band-2)}
+.footer{background:var(--band-deep)}
+.badge{background:var(--band)}
+.badge-consult{background:linear-gradient(145deg,#8E4D63,var(--band-deep) 80%)}
+.seal-bg{fill:var(--band)}
+.chat-head{background:var(--band)}
+.chat-fab{background:radial-gradient(circle at 30% 25%,#9A5A72,var(--band) 70%)}
+.chat-send{background:var(--band)}
+.chat-dot{box-shadow:0 0 0 2px var(--band)}
+@keyframes pinggold{0%{box-shadow:0 0 0 2px var(--band),0 0 0 2px rgba(184,148,106,.6)}70%{box-shadow:0 0 0 2px var(--band),0 0 0 10px rgba(184,148,106,0)}100%{box-shadow:0 0 0 2px var(--band),0 0 0 2px rgba(184,148,106,0)}}
+.results .eyebrow,.consult .eyebrow,.promo-star{color:var(--band-gold)}
+.results .h2 em,.final .h2 em,.consult .h2 em{color:var(--band-pink)}
+.results .lede a{color:var(--band-pink)!important}
+.assure li::before,.consult-list li::before,.ribbon li::after,.ribbon a small{color:var(--band-gold)}
+.final .orbs i{background:radial-gradient(circle at 32% 28%,#fff 0 6%,#FBE3EA 18%,#D99AB0 50%,#9A5470 85%,#6E3B50 100%)}
+.chip[aria-pressed="true"],.chip-feat[aria-pressed="true"],.f-chip input:checked + span{background:var(--band);border-color:var(--band)}
+.spot .spot-label{background:var(--band)}
