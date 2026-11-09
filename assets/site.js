@@ -262,13 +262,14 @@
       }
       sendBtn.disabled = true;
       var label = sendBtn.firstChild.nodeValue; sendBtn.firstChild.nodeValue = "Sending\u2026 ";
-      /* Google Sheets (Apps Script) replies from another domain, so send without reading the reply.
-         Other services such as Formspree reply with JSON we can check. */
+      /* Google Sheets (Apps Script): send as a simple form post and read Google's reply,
+         so "Thank you" only shows once the row is really saved. Formspree replies with JSON too. */
       var toSheets = endpoint.indexOf("script.google.com") !== -1;
       fetch(endpoint, toSheets
-          ? { method: "POST", mode: "no-cors", body: new FormData(form) }
+          ? { method: "POST", body: new URLSearchParams(new FormData(form)) }
           : { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-        .then(function(r){ if (!toSheets && !r.ok) throw new Error(r.status); showDone(); })
+        .then(function(r){ if (!r.ok) throw new Error(r.status); return toSheets ? r.json() : null; })
+        .then(function(data){ if (toSheets && !(data && data.ok)) throw new Error("not saved"); showDone(); })
         .catch(function(){ statusEl.textContent = "Your enquiry didn't send. Try again, or call 07988 347194."; })
         .then(function(){ sendBtn.disabled = false; sendBtn.firstChild.nodeValue = label; });
     });
