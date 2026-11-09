@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "19"
+ASSET_V = "20"
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
@@ -480,10 +480,11 @@ def footer():
 
 
 # ---------------------------------------------------------------- Contact form
-# Where enquiries are sent. Paste a Formspree form URL here (e.g. "https://formspree.io/f/abcdwxyz")
+# Where enquiries are sent: the Google Sheets "Web app URL" (ends in /exec, see _build/google-sheets-form.gs).
+# A Formspree form URL also works.
 # and in index.html (the form's action attribute). While it's empty, the form opens the
 # visitor's email app with their message ready to send.
-CONTACT_ENDPOINT = ""
+CONTACT_ENDPOINT = "https://script.google.com/macros/s/AKfycbwIjtgiQsnvn0LkyGlpMt7sK_cE1ZwWVC9FIpgAC4C3sEN_JkNySS9qnvRZRg2UnWRsVA/exec"
 
 TREATMENT_OPTIONS = [
     ("Face", ["Anti-wrinkle injections", "Lip filler", "Dermal fillers (cheeks, jaw, chin, nose)", "Tear trough filler", "PDO thread lift"]),
@@ -914,8 +915,7 @@ PRIVACY_SECTIONS = [
 <p>We don't sell your information. We only share it with:</p>
 <ul>
 <li><span><strong>Glossa</strong>, which runs our online booking.</span></li>
-<li><span><strong>Formspree</strong>, which receives enquiries from our website form and forwards them to our email.</span></li>
-<li><span><strong>Google</strong>, which provides our email.</span></li>
+<li><span><strong>Google</strong>, which provides our email and stores enquiries from our website form in a private Google Sheet.</span></li>
 <li><span><strong>WhatsApp (Meta)</strong>, if you choose to message us there.</span></li>
 <li><span><strong>Our insurers and professional advisers</strong>, if we have to deal with a claim or complaint.</span></li>
 <li><span><strong>Emergency services or your GP</strong>, in an emergency, or with your permission.</span></li>
@@ -930,7 +930,7 @@ PRIVACY_SECTIONS = [
 </ul>
 """),
   ("transfers", "Information stored outside the UK", """
-<p>Some of the companies above, such as Google, Meta and Formspree, may store or process information outside the UK, including in the United States. When they do, they use safeguards recognised under UK law, such as the UK International Data Transfer Addendum or the UK Extension to the EU–US Data Privacy Framework.</p>
+<p>Some of the companies above, such as Google and Meta, may store or process information outside the UK, including in the United States. When they do, they use safeguards recognised under UK law, such as the UK International Data Transfer Addendum or the UK Extension to the EU–US Data Privacy Framework.</p>
 """),
   ("how-long", "How long we keep it", """
 <ul>
