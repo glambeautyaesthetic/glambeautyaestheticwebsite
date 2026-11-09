@@ -95,7 +95,7 @@
     jaw:       { title: "Jawline", line: "Sharpen the jawline or slim a square jaw.", ids: ["fl1","mas","adv","pdo1"], page: "dermal-fillers-london", more: "jawline filler" },
     chin:      { title: "Chin", line: "Balance your profile or reduce fullness under the chin.", ids: ["chin","fd1"], page: "dermal-fillers-london", more: "chin filler" },
     neck:      { title: "Neck", line: "Soften horizontal lines and firm the neck.", ids: ["neck","pdo2"], page: "pdo-thread-lift-london", more: "neck treatments" },
-    skin:      { title: "Skin", line: "Brighter, smoother, more even skin.", ids: ["pn","exo","exotox","mv","nad","derm","cos"], page: "skin-boosters-london", more: "skin boosters" },
+    skin:      { title: "Skin", line: "Brighter, smoother, more even skin.", ids: ["kgf","pn","exo","exotox","mv","nad","derm","cos"], page: "skin-boosters-london", more: "skin boosters" },
     scalp:     { title: "Hair loss", line: "Encourage thicker, healthier hair growth.", ids: ["hg"], page: "microneedling-london", more: "hair growth therapy" },
     shoulders: { title: "Shoulders", line: "Slim the shoulder line and ease tension.", ids: ["trap"], page: "anti-wrinkle-injections-london", more: "Traptox" },
     underarms: { title: "Excessive sweating", line: "Significantly reduce underarm sweating.", ids: ["hyp"], page: "anti-wrinkle-injections-london", more: "sweating treatment" },

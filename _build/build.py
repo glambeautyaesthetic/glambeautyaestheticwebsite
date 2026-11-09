@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "20"
+ASSET_V = "21"
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
@@ -278,14 +278,14 @@ TREATMENTS = [
   {
     "slug": "microneedling-london",
     "name": "Microneedling &amp; peels",
-    "title": "Microneedling & Skin Peels London | From £59 | Glam Beauty Aesthetics",
-    "description": "Microneedling, hair growth therapy, dermaplaning and Cosmelan peels in London from £59. Brighter, smoother, more even skin. Open 7 days, book online.",
+    "title": "Microneedling, Facials & Peels London | From £50 | Glam Beauty",
+    "description": "Microneedling, Korean glass facials, dermaplaning, hair growth therapy and Cosmelan peels in London from £50. Brighter, smoother skin. Book online.",
     "eyebrow": "Skin treatments · London",
     "h1": "Microneedling &amp; peels", "h1_em": "in London.",
     "summary": "Treatments for texture, brightness, pigmentation and thinning hair.",
     "points": [], "whole_face": True, "area_label": "Face and scalp",
-    "facts": [("45–60 min", "Treatment time"), ("3–6 sessions", "Microneedling course"), ("1–2 days", "Redness settles"), ("From £59", "Per treatment")],
-    "services": ["mv", "hg", "derm", "cos"],
+    "facts": [("45–60 min", "Treatment time"), ("3–6 sessions", "Microneedling course"), ("1–2 days", "Redness settles"), ("From £50", "Per treatment")],
+    "services": ["kgf", "mv", "hg", "derm", "cos"],
     "body": """
 <h2>Multi-vitamin microneedling</h2>
 <p>Microneedling (£120) creates tiny channels in the skin using a pen with ultra-fine points. This prompts the skin to repair itself and produce fresh collagen, and helps a vitamin serum absorb more deeply. It helps with dull skin, uneven texture, open pores and mild scarring.</p>
@@ -293,6 +293,8 @@ TREATMENTS = [
 <p>For thinning hair, scalp injections are combined with microneedling (£125) to stimulate the hair follicles. It is usually done as a course, and results build gradually across several months.</p>
 <h2>Dermaplaning</h2>
 <p>Dermaplaning (£59) is a gentle exfoliation with a sterile blade that removes dead skin and fine facial hair. Skin looks brighter straight away, make-up goes on more smoothly, and there's no downtime.</p>
+<h2>Korean glass facial</h2>
+<p>The Korean glass facial (£50) is a multi-step hydrating facial inspired by Korean skincare. It cleanses, gently exfoliates and deeply hydrates the skin for a smooth, dewy, light-reflecting “glass skin” finish. There's no downtime, so it's a lovely treat before an event.</p>
 <h2>Cosmelan peel</h2>
 <p>Cosmelan (£553, aftercare products included) is a professional depigmentation peel for stubborn melasma, sun spots and uneven tone. The mask is applied in clinic and removed at home several hours later, followed by a home-care routine. Expect redness and peeling for several days. Results develop during the following weeks.</p>
 <h2>Aftercare</h2>
@@ -488,7 +490,7 @@ CONTACT_ENDPOINT = "https://script.google.com/macros/s/AKfycbwIjtgiQsnvn0LkyGlpM
 
 TREATMENT_OPTIONS = [
     ("Face", ["Anti-wrinkle injections", "Lip filler", "Dermal fillers (cheeks, jaw, chin, nose)", "Tear trough filler", "PDO thread lift"]),
-    ("Skin", ["Skin boosters & polynucleotides", "Microneedling & peels", "Hair growth therapy"]),
+    ("Skin", ["Skin boosters & polynucleotides", "Microneedling & peels", "Korean glass facial", "Hair growth therapy"]),
     ("Body & wellness", ["Fat dissolving", "Leg vein treatment", "Vitamin injections"]),
     ("Occasions", ["Bridal hair & makeup", "Glam makeup"]),
 ]
