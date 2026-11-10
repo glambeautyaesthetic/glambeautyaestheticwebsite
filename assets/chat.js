@@ -141,7 +141,7 @@
   if (typeof document === "undefined") return;
 
   /* ================================================================ UI */
-  var KB_URL = "/assets/chat-kb.json?v=25";
+  var KB_URL = "/assets/chat-kb.json?v=33";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var engine = null, kb = null, loading = null, started = false;
 
@@ -229,7 +229,7 @@
     var a = el("a", "chat-link chat-link-" + l[2], l[0]);
     var href = l[1];
     if (l[2] === "book") {
-      href = kb.book + "?utm_source=website&utm_medium=chat&utm_content=" + encodeURIComponent(id);
+      href = kb.book + (kb.book.indexOf("?") === -1 ? "?" : "&") + "utm_source=website&utm_medium=chat&utm_content=" + encodeURIComponent(id);
       a.classList.add("js-book"); a.setAttribute("data-cta", "chat-" + id);
     } else if (l[2] === "wa" || l[2] === "tel") {
       a.setAttribute("data-cta", "chat-" + id);

@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://glambeautyaesthetics.co.uk"
-BOOK = "https://marketplace.getglossa.com/studios/glam-beauty-aesthetics"
+BOOK = "https://facesconsent.com/clinics/glam-beauty-aesthetics-382436/madina?clinicName=madina"
 PHONE_INTL = "+447988347194"
 PHONE = "07988 347194"
 EMAIL = "shania0712@googlemail.com"
@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "32"
+ASSET_V = "33"
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
@@ -363,7 +363,7 @@ def read_services():
 
 
 def book_url(label):
-    return f"{BOOK}?utm_source=website&amp;utm_medium=book_button&amp;utm_content={label}"
+    return f"{BOOK}{'&amp;' if '?' in BOOK else '?'}utm_source=website&amp;utm_medium=book_button&amp;utm_content={label}"
 
 
 ARROW = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg>'
@@ -893,7 +893,7 @@ PRIVACY_SECTIONS = [
 <ul>
 <li><span><strong>When you send an enquiry through our website:</strong> your name, phone number, email address, the treatment you're interested in, how you'd like us to contact you, and your message.</span></li>
 <li><span><strong>When you call, WhatsApp, email or message us on Instagram:</strong> the details you share with us and our conversation.</span></li>
-<li><span><strong>When you book online:</strong> bookings are made through Glossa, our booking provider. Glossa collects your booking details and shares them with us so we can manage your appointment.</span></li>
+<li><span><strong>When you book online:</strong> bookings are made through Faces (facesconsent.com), our booking provider. Faces collects your booking details and shares them with us so we can manage your appointment.</span></li>
 <li><span><strong>When you come for treatment:</strong> your contact details, date of birth, medical history, consultation notes, consent forms and treatment records. With your permission, we also take photographs of the treated area.</span></li>
 <li><span><strong>When you visit our website:</strong> our website itself doesn't use cookies or tracking tools. Some features load content from other companies; see <a href="#other-companies">Other companies on our website</a>.</span></li>
 </ul>
@@ -917,7 +917,7 @@ PRIVACY_SECTIONS = [
   ("sharing", "Who we share it with", """
 <p>We don't sell your information. We only share it with:</p>
 <ul>
-<li><span><strong>Glossa</strong>, which runs our online booking.</span></li>
+<li><span><strong>Faces</strong>, which runs our online booking.</span></li>
 <li><span><strong>Google</strong>, which provides our email and stores enquiries from our website form in a private Google Sheet.</span></li>
 <li><span><strong>WhatsApp (Meta)</strong>, if you choose to message us there.</span></li>
 <li><span><strong>Our insurers and professional advisers</strong>, if we have to deal with a claim or complaint.</span></li>
@@ -929,7 +929,7 @@ PRIVACY_SECTIONS = [
 <ul>
 <li><span><strong>Google Fonts:</strong> our fonts load from Google's servers, which receive your device's IP address to deliver them.</span></li>
 <li><span><strong>Google Maps:</strong> the map on our home page is provided by Google, which may set cookies when the map loads.</span></li>
-<li><span><strong>Links to Glossa, WhatsApp and Instagram:</strong> when you follow these links, those companies' own privacy policies apply.</span></li>
+<li><span><strong>Links to Faces, WhatsApp and Instagram:</strong> when you follow these links, those companies' own privacy policies apply.</span></li>
 </ul>
 """),
   ("transfers", "Information stored outside the UK", """

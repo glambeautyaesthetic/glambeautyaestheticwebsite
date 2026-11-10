@@ -1,6 +1,6 @@
 (function(){
   "use strict";
-  var BOOK_URL = "https://marketplace.getglossa.com/studios/glam-beauty-aesthetics";
+  var BOOK_URL = "https://facesconsent.com/clinics/glam-beauty-aesthetics-382436/madina?clinicName=madina";
   var SITE = "https://glambeautyaesthetics.co.uk/";
   var $ = function(s, r){ return (r||document).querySelector(s); };
   var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
@@ -16,7 +16,7 @@
   }
   $$(".js-book").forEach(function(a){
     var label = a.getAttribute("data-cta") || "unknown";
-    a.href = BOOK_URL + "?utm_source=website&utm_medium=book_button&utm_content=" + encodeURIComponent(label);
+    a.href = BOOK_URL + (BOOK_URL.indexOf("?") === -1 ? "?" : "&") + "utm_source=website&utm_medium=book_button&utm_content=" + encodeURIComponent(label);
   });
   document.addEventListener("click", function(e){
     var a = e.target.closest("a");
@@ -134,7 +134,7 @@
         var price = document.createElement("span"); price.className = "fm-item-price"; price.textContent = s.price;
         var a = document.createElement("a"); a.className = "btn btn-primary js-book"; a.textContent = "Book";
         a.setAttribute("data-cta", "facemap-" + key + "-" + id);
-        a.href = BOOK_URL + "?utm_source=website&utm_medium=book_button&utm_content=" + encodeURIComponent("facemap-" + key + "-" + id);
+        a.href = BOOK_URL + (BOOK_URL.indexOf("?") === -1 ? "?" : "&") + "utm_source=website&utm_medium=book_button&utm_content=" + encodeURIComponent("facemap-" + key + "-" + id);
         a.setAttribute("aria-label", "Book " + s.name);
         li.appendChild(name); li.appendChild(price); li.appendChild(a);
         list.appendChild(li);
