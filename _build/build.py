@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam.beautyaesthetic"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "24"
+ASSET_V = "25"
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
@@ -178,18 +178,19 @@ TREATMENTS = [
     "slug": "skin-boosters-london",
     "name": "Skin boosters",
     "title": "Polynucleotides & Skin Boosters London | Glam Beauty Aesthetics",
-    "description": "Polynucleotides, exosomes, Exo-Tox, NAD+ and under-eye skin boosters in London from £95. Improve texture, hydration and glow. Open 7 days, book online.",
+    "description": "Radiesse, polynucleotides, exosomes, Exo-Tox, NAD+ and under-eye skin boosters in London from £95. Improve texture, firmness and glow. Book online.",
     "eyebrow": "Skin boosters · London",
     "h1": "Skin boosters", "h1_em": "in London.",
     "summary": "Treatments that improve your skin itself: texture, hydration, firmness and glow.",
     "points": [], "whole_face": True, "area_label": "The whole face",
     "facts": [("30–60 min", "Treatment time"), ("2–4 weeks", "Results build"), ("1–2 days", "Small bumps settle"), ("From £95", "Per treatment")],
-    "services": ["pn", "ue", "exo", "exotox", "nad", "lipb"],
+    "services": ["rad", "pn", "ue", "exo", "exotox", "nad", "lipb"],
     "body": """
 <h2>What skin boosters do</h2>
 <p>Fillers change shape. Skin boosters change the skin. They support its own repair processes to improve texture, hydration and elasticity, so the result is fresher, healthier-looking skin rather than added volume.</p>
 <h2>Our skin boosters</h2>
 <ul>
+<li><span><strong>Radiesse skin booster (£325):</strong> a collagen-stimulating injectable that helps firm and tighten crepey or loose skin, with results that build gradually as collagen forms.</span></li>
 <li><span><strong>Polynucleotides (£125):</strong> help the skin repair and renew itself. Popular for crepey skin and fine lines.</span></li>
 <li><span><strong>Under-eye booster (£95):</strong> for dark circles, puffiness and thin skin under the eyes.</span></li>
 <li><span><strong>Exosomes (£125):</strong> a regenerative treatment to improve texture and support healing.</span></li>
