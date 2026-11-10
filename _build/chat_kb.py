@@ -299,7 +299,7 @@ def build_kb(b, services, home_html):
          ["Yes, your consultation is free, with no obligation to go ahead. You'll talk through what you'd like to change and your medical history, and leave with a clear plan and price."],
          [["Request a consultation", "/?consult=1#contact", "page"], ["Ask on WhatsApp", "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20consultation.", "wa"]], 1.0),
         ("practitioner", "Who does the treatments", "practitioner who",
-         [f"Treatments are carried out by our Level 4 advanced qualified professional, who has more than 20 years' experience in the beauty industry and explains everything before starting. Clients often mention how clearly everything is explained: we're rated {rating} from {count} Google reviews.",
+         [f"Treatments are carried out by our Level 4 advanced qualified professional, who has more than 20 years' experience in the beauty industry and explains everything before starting. We also work together with a qualified nurse. Clients often mention how clearly everything is explained: we're rated {rating} from {count} Google reviews.",
           "If you'd like to know more about her training, just ask on WhatsApp."],
          [["Read reviews", "/#reviews", "page"], wa], 1.0),
         ("reviews", "Reviews", "review",

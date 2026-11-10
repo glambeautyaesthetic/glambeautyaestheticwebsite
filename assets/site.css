@@ -978,3 +978,4 @@ a.rv-tag:hover{background:rgba(63,77,57,.07)}
 .chat-form input:focus{box-shadow:0 0 0 3px rgba(63,77,57,.15)}
 .fm-blush{fill:#C98B8B;opacity:.14}
 .svc.flash{background:rgba(184,148,106,.16)}
+@media (min-width:861px){.hero-points{margin:22px 0 28px}.hero-meta{margin-top:24px}}
