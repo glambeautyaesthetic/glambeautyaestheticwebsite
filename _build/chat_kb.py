@@ -278,7 +278,7 @@ def build_kb(b, services, home_html):
          [wa, call, ["Contact form", "/#contact", "page"]], 1.0),
         ("email", "Email", "email", [f"Our email is {b.EMAIL}."], [[f"Email us", f"mailto:{b.EMAIL}", "mail"]], 1.0),
         ("whatsapp", "WhatsApp", "whatsapp", ["Yes, you can message us on WhatsApp."], [wa], 1.0),
-        ("instagram", "Instagram", "instagram", ["Follow us on Instagram @glam.beautyaesthetic for recent work."],
+        ("instagram", "Instagram", "instagram", ["Follow us on Instagram @glam_beauty__aesthetics for recent work."],
          [["Open Instagram", b.INSTAGRAM, "url"]], 1.0),
         ("book", "How to book", "book online",
          ["You can book online in about a minute. Tap Book now, choose your treatment and a time that suits you, and confirm. We're open seven days a week."],
