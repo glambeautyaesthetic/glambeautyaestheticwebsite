@@ -960,3 +960,9 @@ html.chat-lock,html.chat-lock body{overflow:hidden}
 .hero-points li,.ticks.why-list li{display:block;position:relative;padding-left:32px}
 .hero-points li::before,.ticks.why-list li::before{position:absolute;left:0;top:1px;margin:0;width:20px;height:20px}
 .nowrap{white-space:nowrap}
+
+/* ---------- Section colour: sage green (replaces rose mauve) ---------- */
+:root{--band:#53634C;--band-deep:#445240;--band-2:#63745B;--band-gold:#F4E0BC;--band-pink:#F8DDE4}
+.badge-consult{background:linear-gradient(145deg,#76876E,var(--band-deep) 80%)}
+.chat-fab{background:radial-gradient(circle at 30% 25%,#7E9076,var(--band) 70%)}
+.final .orbs i{background:radial-gradient(circle at 32% 28%,#fff 0 6%,#F4EFE6 18%,#C9D3BF 50%,#7E9076 85%,#5E6E57 100%)}
