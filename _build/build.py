@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam.beautyaesthetic"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "25"
+ASSET_V = "28"
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
