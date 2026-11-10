@@ -356,7 +356,7 @@
     if (started) return;
     started = true;
     var m = el("div", "msg msg-bot");
-    m.appendChild(el("p", null, "Hi, I'm the Glam Assistant. Ask me about treatments, prices, opening hours or booking. Typos are fine!"));
+    m.appendChild(el("p", null, "Hi, I'm the Glam Assistant. Ask me about treatments, prices, opening hours or booking."));
     log.appendChild(m);
     load().then(function () { log.appendChild(chips(kb.start.map(startChip), "Popular questions")); scrollDown(); }).catch(function () {});
   }
