@@ -1,5 +1,5 @@
 """
-Builds the treatment pages and sitemap for glambeautyaesthetics.co.uk.
+Builds the treatment pages and sitemap for glambeautyaesthetic.com.
 
     python _build/build.py
 
@@ -15,7 +15,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://glambeautyaesthetics.co.uk"
+SITE = "https://glambeautyaesthetic.com"
 BOOK = "https://facesconsent.com/clinics/glam-beauty-aesthetics-382436/madina?clinicName=madina"
 PHONE_INTL = "+447988347194"
 PHONE = "07988 347194"
@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "35"
+ASSET_V = "36"
 # Vercel Web Analytics (turn on in the Vercel dashboard: Project > Analytics > Enable)
 VERCEL_ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>\n<script defer src="/_vercel/insights/script.js"></script>\n'
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
@@ -738,7 +738,7 @@ def page(t, services):
 <meta property="og:title" content="{t['title']}">
 <meta property="og:description" content="{t['description']}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/user-uploads/sliders/1780602415.jpeg">
+<meta property="og:image" content="{SITE}/images/site/hero-portrait.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">

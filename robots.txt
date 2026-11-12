@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://glambeautyaesthetics.co.uk/sitemap.xml
+Sitemap: https://glambeautyaesthetic.com/sitemap.xml
