@@ -1,7 +1,7 @@
 (function(){
   "use strict";
   var BOOK_URL = "https://facesconsent.com/clinics/glam-beauty-aesthetics-382436/madina?clinicName=madina";
-  var SITE = "https://glambeautyaesthetic.com/";
+  var SITE = "https://www.glambeautyaesthetic.com/";
   var $ = function(s, r){ return (r||document).querySelector(s); };
   var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
 

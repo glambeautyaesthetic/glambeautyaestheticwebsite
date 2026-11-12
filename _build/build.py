@@ -15,7 +15,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://glambeautyaesthetic.com"
+SITE = "https://www.glambeautyaesthetic.com"
 BOOK = "https://facesconsent.com/clinics/glam-beauty-aesthetics-382436/madina?clinicName=madina"
 PHONE_INTL = "+447988347194"
 PHONE = "07988 347194"
@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "36"
+ASSET_V = "37"
 # Vercel Web Analytics (turn on in the Vercel dashboard: Project > Analytics > Enable)
 VERCEL_ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>\n<script defer src="/_vercel/insights/script.js"></script>\n'
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
