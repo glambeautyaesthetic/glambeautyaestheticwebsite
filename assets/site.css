@@ -990,3 +990,13 @@ a.rv-tag:hover{background:rgba(63,77,57,.07)}
 .footer ul li.footer-social{display:flex;gap:10px;margin-top:6px}
 .footer-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid rgba(247,240,238,.3);color:#F7F0EE;transition:background .25s,border-color .25s,transform .25s}
 .footer-social a:hover{background:rgba(247,240,238,.12);border-color:#F7F0EE;transform:translateY(-2px)}
+/* Guides and area pages */
+.guide-meta{font-size:13px;color:var(--muted);margin:18px 0 0;letter-spacing:.02em}
+.key-points{background:var(--porcelain-2);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,28px);margin:0 0 8px}
+.prose .key-points h2{font-size:clamp(1.3rem,2vw,1.6rem);margin:0 0 10px}
+.prose .key-points ul{margin:0}
+.prose .faq{margin:8px 0 12px}
+.guide-note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:28px}
+.footer-areas{font-size:13px;line-height:1.6}
+.footer .footer-areas a{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:860px){.guide-grid .t-card{order:0}}

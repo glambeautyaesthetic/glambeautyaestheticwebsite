@@ -26,9 +26,10 @@ TIKTOK = "https://www.tiktok.com/@glam_beauty__aesthetics"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "39"
+ASSET_V = "40"
 # Vercel Web Analytics (turn on in the Vercel dashboard: Project > Analytics > Enable)
 VERCEL_ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>\n<script defer src="/_vercel/insights/script.js"></script>\n'
+import extra_pages
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
 STARS = '<span class="stars" aria-hidden="true">★★★★★</span>'
 WHATSAPP = "https://wa.me/447988347194?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20treatment"
@@ -457,6 +458,7 @@ def footer():
           <li><a href="/#about">About</a></li>
           <li><a href="/#results">Results</a></li>
           <li><a href="/#faq">FAQs</a></li>
+          <li><a href="/guides/">Guides</a></li>
           <li><a href="/#contact">Contact us</a></li>
           <li><a class="js-book" data-cta="footer" href="{BOOK}">Book online</a></li>
         </ul>
@@ -465,6 +467,7 @@ def footer():
         <h2>Contact</h2>
         <ul>
           <li>{', '.join(ADDRESS_LINES)}</li>
+          <li class="footer-areas">Close to <a href="/aesthetics-clinic-stratford/">Stratford</a>, <a href="/aesthetics-clinic-east-ham/">East Ham</a>, <a href="/aesthetics-clinic-plaistow/">Plaistow</a> and <a href="/aesthetics-clinic-beckton/">Beckton</a></li>
           <li><a href="tel:{PHONE_INTL}" data-cta="footer-call">{PHONE}</a></li>
           <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
           <li class="footer-social"><a href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram" data-cta="footer-instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="{FACEBOOK}" target="_blank" rel="noopener" aria-label="Facebook" data-cta="footer-facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10.5H7.8v3h2.6V21h3.1z"/></svg></a><a href="{TIKTOK}" target="_blank" rel="noopener" aria-label="TikTok" data-cta="footer-tiktok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg></a></li>
@@ -830,7 +833,7 @@ def page(t, services):
     <div class="reveal">
       <span class="eyebrow">Questions</span>
       <h2 class="h2" id="faq-title">{t['name']}, <em>answered.</em></h2>
-      <p class="lede" style="margin-bottom:28px">Anything else, call <a href="tel:{PHONE_INTL}" data-cta="{slug}-faq-call">{PHONE}</a>.</p>
+      <p class="lede" style="margin-bottom:28px">Anything else, call <a href="tel:{PHONE_INTL}" data-cta="{slug}-faq-call">{PHONE}</a>.{extra_pages.guides_links_html(slug)}</p>
       <a class="btn btn-primary js-book" data-cta="{slug}-faq" href="{BOOK}">Book now</a>
     </div>
     <div class="faq reveal">
@@ -1054,7 +1057,7 @@ def privacy_page():
 
 def sitemap():
     today = date.today().isoformat()
-    urls = [f"{SITE}/"] + [f"{SITE}/{t['slug']}/" for t in TREATMENTS] + [f"{SITE}/privacy-policy/"]
+    urls = [f"{SITE}/"] + [f"{SITE}/{t['slug']}/" for t in TREATMENTS] + extra_pages.all_urls(sys.modules[__name__]) + [f"{SITE}/privacy-policy/"]
     body = "\n".join(f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{today}</lastmod>\n  </url>" for u in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}\n</urlset>\n'
 
@@ -1073,12 +1076,13 @@ def main():
     out.parent.mkdir(exist_ok=True)
     out.write_text(privacy_page(), encoding="utf-8")
     print("wrote", out.relative_to(ROOT))
+    extra_pages.write_all(sys.modules[__name__], services)
     import chat_kb
     kb = chat_kb.build_kb(sys.modules[__name__], services, (ROOT / "index.html").read_text(encoding="utf-8"))
     (ROOT / "assets" / "chat-kb.json").write_text(json.dumps(kb, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print("wrote assets/chat-kb.json with", len(kb["entries"]), "answers")
     (ROOT / "sitemap.xml").write_text(sitemap(), encoding="utf-8")
-    print("wrote sitemap.xml with", len(TREATMENTS) + 2, "pages")
+    print("wrote sitemap.xml with", sitemap().count("<loc>"), "pages")
 
 
 if __name__ == "__main__":

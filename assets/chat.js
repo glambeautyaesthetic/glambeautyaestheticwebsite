@@ -141,7 +141,7 @@
   if (typeof document === "undefined") return;
 
   /* ================================================================ UI */
-  var KB_URL = "/assets/chat-kb.json?v=39";
+  var KB_URL = "/assets/chat-kb.json?v=40";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var engine = null, kb = null, loading = null, started = false;
 
