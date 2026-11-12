@@ -986,3 +986,7 @@ a.rv-tag:hover{background:rgba(63,77,57,.07)}
 .footer-legal a{color:#F7F0EE}
 .results-note{color:rgba(247,240,238,.9)}
 .footer-mark::before{content:attr(data-word)}
+/* Footer social icons */
+.footer ul li.footer-social{display:flex;gap:10px;margin-top:6px}
+.footer-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid rgba(247,240,238,.3);color:#F7F0EE;transition:background .25s,border-color .25s,transform .25s}
+.footer-social a:hover{background:rgba(247,240,238,.12);border-color:#F7F0EE;transform:translateY(-2px)}

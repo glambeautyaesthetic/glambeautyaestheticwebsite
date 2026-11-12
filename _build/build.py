@@ -21,10 +21,12 @@ PHONE_INTL = "+447988347194"
 PHONE = "07988 347194"
 EMAIL = "shania0712@googlemail.com"
 INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
+FACEBOOK = "https://www.facebook.com/profile.php?id=61596324786832"
+TIKTOK = "https://www.tiktok.com/@glam_beauty__aesthetics"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "38"
+ASSET_V = "39"
 # Vercel Web Analytics (turn on in the Vercel dashboard: Project > Analytics > Enable)
 VERCEL_ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>\n<script defer src="/_vercel/insights/script.js"></script>\n'
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
@@ -465,7 +467,7 @@ def footer():
           <li>{', '.join(ADDRESS_LINES)}</li>
           <li><a href="tel:{PHONE_INTL}" data-cta="footer-call">{PHONE}</a></li>
           <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
-          <li><a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram</a></li>
+          <li class="footer-social"><a href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram" data-cta="footer-instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="{FACEBOOK}" target="_blank" rel="noopener" aria-label="Facebook" data-cta="footer-facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10.5H7.8v3h2.6V21h3.1z"/></svg></a><a href="{TIKTOK}" target="_blank" rel="noopener" aria-label="TikTok" data-cta="footer-tiktok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg></a></li>
         </ul>
       </div>
     </div>
@@ -620,6 +622,8 @@ def visit_section():
           <li><span>Email</span><a href="mailto:{EMAIL}">{EMAIL}</a></li>
           <li><span>WhatsApp</span><a href="{WHATSAPP}" target="_blank" rel="noopener" data-cta="visit-whatsapp">Message us on WhatsApp</a></li>
           <li><span>Instagram</span><a href="{INSTAGRAM}" target="_blank" rel="noopener">@glam_beauty__aesthetics</a></li>
+          <li><span>Facebook</span><a href="{FACEBOOK}" target="_blank" rel="noopener">Glam Beauty Aesthetics</a></li>
+          <li><span>TikTok</span><a href="{TIKTOK}" target="_blank" rel="noopener">@glam_beauty__aesthetics</a></li>
         </ul>
       </address>
       <a class="btn btn-primary js-book" data-cta="visit" href="{BOOK}">Book your visit {ARROW}</a>
@@ -896,7 +900,7 @@ PRIVACY_SECTIONS = [
   ("what-we-collect", "What we collect", """
 <ul>
 <li><span><strong>When you send an enquiry through our website:</strong> your name, phone number, email address, the treatment you're interested in, how you'd like us to contact you, and your message.</span></li>
-<li><span><strong>When you call, WhatsApp, email or message us on Instagram:</strong> the details you share with us and our conversation.</span></li>
+<li><span><strong>When you call, WhatsApp, email or message us on Instagram, Facebook or TikTok:</strong> the details you share with us and our conversation.</span></li>
 <li><span><strong>When you book online:</strong> bookings are made through Faces (facesconsent.com), our booking provider. Faces collects your booking details and shares them with us so we can manage your appointment.</span></li>
 <li><span><strong>When you come for treatment:</strong> your contact details, date of birth, medical history, consultation notes, consent forms and treatment records. With your permission, we also take photographs of the treated area.</span></li>
 <li><span><strong>When you visit our website:</strong> our website itself doesn't use cookies or tracking tools. Some features load content from other companies; see <a href="#other-companies">Other companies on our website</a>.</span></li>
@@ -933,7 +937,7 @@ PRIVACY_SECTIONS = [
 <ul>
 <li><span><strong>Google Fonts:</strong> our fonts load from Google's servers, which receive your device's IP address to deliver them.</span></li>
 <li><span><strong>Google Maps:</strong> the map on our home page is provided by Google, which may set cookies when the map loads.</span></li>
-<li><span><strong>Links to Faces, WhatsApp and Instagram:</strong> when you follow these links, those companies' own privacy policies apply.</span></li>
+<li><span><strong>Links to Faces, WhatsApp, Instagram, Facebook and TikTok:</strong> when you follow these links, those companies' own privacy policies apply.</span></li>
 </ul>
 """),
   ("transfers", "Information stored outside the UK", """
