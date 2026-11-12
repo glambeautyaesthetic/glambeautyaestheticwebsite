@@ -979,3 +979,10 @@ a.rv-tag:hover{background:rgba(63,77,57,.07)}
 .fm-blush{fill:#C98B8B;opacity:.14}
 .svc.flash{background:rgba(184,148,106,.16)}
 @media (min-width:861px){.hero-points{margin:22px 0 28px}.hero-meta{margin-top:24px}}
+/* Contrast (PageSpeed accessibility) */
+.footer,.footer a{color:rgba(247,240,238,.88)}
+.footer .brand-sub{color:rgba(247,240,238,.85)}
+.footer-legal{color:rgba(247,240,238,.85)}
+.footer-legal a{color:#F7F0EE}
+.results-note{color:rgba(247,240,238,.9)}
+.footer-mark::before{content:attr(data-word)}

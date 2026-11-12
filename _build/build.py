@@ -24,7 +24,7 @@ INSTAGRAM = "https://www.instagram.com/glam_beauty__aesthetics/"
 ADDRESS_LINES = ["28 Barking Road, Canning Town", "London E16 1EQ"]
 STREET, POSTCODE = "28 Barking Road, Canning Town", "E16 1EQ"
 MAPS = "https://www.google.com/maps/search/?api=1&query=28+Barking+Road+Canning+Town+London+E16+1EQ"
-ASSET_V = "37"
+ASSET_V = "38"
 # Vercel Web Analytics (turn on in the Vercel dashboard: Project > Analytics > Enable)
 VERCEL_ANALYTICS = '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>\n<script defer src="/_vercel/insights/script.js"></script>\n'
 REVIEWS = json.loads((Path(__file__).resolve().parent / "reviews.json").read_text(encoding="utf-8"))
@@ -473,7 +473,7 @@ def footer():
       <span>© <span id="year">{date.today().year}</span> Glam Beauty Aesthetics. All rights reserved. <a href="/privacy-policy/">Privacy policy</a></span>
       <span>Results vary from person to person. Injectable treatments are for clients aged 18 or older.</span>
     </div>
-    <p class="footer-mark" aria-hidden="true">Glam</p>
+    <p class="footer-mark" aria-hidden="true" data-word="Glam"></p>
   </div>
 </footer>
 
