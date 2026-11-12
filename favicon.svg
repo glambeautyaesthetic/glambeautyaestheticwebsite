@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#2A1622"/><text x="32" y="45" text-anchor="middle" font-family="Didot, 'Bodoni 72', Georgia, serif" font-style="italic" font-size="38" fill="#F7F0EE">G</text><circle cx="47" cy="17" r="3" fill="#B8946A"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+  <title>Glam Beauty Aesthetics</title>
+  <rect width="64" height="64" rx="14" fill="#2A1622"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="11" fill="none" stroke="#B8946A" stroke-opacity=".35" stroke-width=".3"/>
+  <path fill="#F7F0EE" transform="translate(13.487 48.545) scale(0.02372 -0.02372)" d="M1286 1354 1223 948H1176Q1160 1152 1083.0 1236.5Q1006 1321 858 1321Q693 1321 600.5 1160.0Q508 999 453.5 693.0Q399 387 399 285Q399 164 462.5 92.0Q526 20 641 20Q771 20 836.0 110.0Q901 200 936 438H743L754 489H1343L1333 438H1204Q1126 152 979.5 60.5Q833 -31 676 -31Q422 -31 293.0 143.5Q164 318 164 530Q164 860 385.5 1116.0Q607 1372 850 1372Q1051 1372 1161 1247Q1206 1289 1241 1354Z"/>
+  <circle cx="51.5" cy="12.5" r="3" fill="#B8946A"/>
+</svg>
